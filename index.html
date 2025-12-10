@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head:
+    <meta charset="UTF-8">
+    <title>Aikoz Bazarbayeva | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-logo">Aikoz<span>.</span></div>
+        <nav class="nav-links" id="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#projects">Projects</a>
+            <a href="homeworks.html">Homeworks</a>
+            <a href="github.html">GitHub</a>
+            <a href="presentations.html">Presentations</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="nav-toggle" id="nav-toggle">
+            ☰
+        </button>
+    </header>
+
+    <!-- HERO section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <p class="hero-subtitle">Physics Student · Frontend Learner · Dreamer</p>
+            <h1 class="hero-title">Hi, I’m <span>Aikoz</span> 👋</h1>
+            <p class="hero-text">
+                I am a Physics student exploring HTML, CSS, JavaScript and building educational projects,
+                mini apps and beautiful presentations. On this site you can find information about me,
+                my achievements, certificates, projects and academic work.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn outline">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-photo">
+            <!-- Put your photo here -->
+            <div class="photo-circle">
+                <img src="images/profile.jpg" alt="Aikoz photo">
+            </div>
+            <p class="hero-location">Currently: Riga, Latvia 🇱🇻</p>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="section-header">
+            <h2>About Me</h2>
+            <p>A short introduction and my academic path</p>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-text">
+                <h3>Who am I?</h3>
+                <p>
+                    My name is Aikoz Bazarbayeva. I am a 4th-year Physics student.
+                    I love science, space, programming, and clean design. I take part in
+                    conferences, write research papers, and build educational websites and presentations.
+                </p>
+                <p>
+                    Right now I am on academic mobility in Riga and at the same time I’m
+                    growing as a web developer: creating layouts, learning JavaScript,
+                    and experimenting with interactive projects and AI tools.
+                </p>
+            </div>
+            <div class="about-info">
+                <ul>
+                    <li><span>Name:</span> Aikoz Bazarbayeva</li>
+                    <li><span>Major:</span> 6B05302 – Physics</li>
+                    <li><span>Email:</span> <a href="azmyba03@gmail.com">azmyba03@gmail.com</a></li>
+                    <li><span>Phone:</span> +371 20242322</li>
+                    <li><span>Cities:</span> Riga / Almaty</li>
+                    <li><span>Address:</span> Valērijas Seiles iela 1-korpuss 5, Latgales priekšpilsēta, Rīga, LV-1019 </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="section" id="achievements">
+        <div class="section-header">
+            <h2>Achievements</h2>
+            <p>Olympiads, conferences, projects and awards</p>
+        </div>
+
+        <div class="cards-grid">
+            <article class="card">
+                <h3>International Student Conference</h3>
+                <p class="card-tag">Astrophysics · 2025</p>
+                <p>
+                    Presented a research project on stellar evolution and took part
+                    in a student conference with an astrophysics talk.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>SmartQuiz Mini Project</h3>
+                <p class="card-tag">Web · Education</p>
+                <p>
+                    Prototype of a web application that helps teachers quickly create quizzes
+                    and Kahoot-style tests based on uploaded materials.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Academic Scholarship</h3>
+                <p class="card-tag">Academic</p>
+                <p>
+                    Here you can describe your scholarship, grant, or other important
+                    academic achievement in a few lines.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+        <div class="section-header">
+            <h2>Projects</h2>
+            <p>Web, physics and AI-related projects</p>
+        </div>
+
+        <!-- Project filters -->
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="physics">Physics</button>
+            <button class="filter-btn" data-filter="ai">AI</button>
+        </div>
+
+        <div class="cards-grid" id="projects-grid">
+            <article class="card project-card" data-category="web">
+                <h3>HTML/CSS Exam Site</h3>
+                <p class="card-tag">Web · Frontend</p>
+                <p>
+                    Responsive exam-style website with navigation, sections and images.
+                </p>
+                <a href="#" class="card-link" target="_blank">View project</a>
+            </article>
+
+            <article class="card project-card" data-category="physics">
+                <h3>Astrophysics Presentation</h3>
+                <p class="card-tag">Physics · Astronomy</p>
+                <p>
+                    Slides and materials about stellar evolution and celestial mechanics,
+                    prepared for a student conference.
+                </p>
+                <a href="#" class="card-link" target="_blank">Download slides</a>
+            </article>
+
+            <article class="card project-card" data-category="ai">
+                <h3>Study-AI Notes</h3>
+                <p class="card-tag">AI · Education</p>
+                <p>
+                    Concept of a service that turns lectures into structured notes,
+                    flashcards and mind maps using AI models.
+                </p>
+                <a href="#" class="card-link" target="_blank">Project description</a>
+            </article>
+        </div>
+
+        <div style="text-align:center; margin-top: 30px;">
+            <a href="github.html" class="btn outline">See all projects on GitHub</a>
+        </div>
+    </section>
+
+    <!-- Certificates -->
+    <section class="section" id="certificates">
+        <div class="section-header">
+            <h2>Certificates</h2>
+            <p>Online courses, workshops, trainings</p>
+        </div>
+
+        <div class="cert-grid">
+            <figure class="cert-card">
+                <img src="images/cert1.jpg" alt="Certificate 1">
+                <figcaption>HTML, CSS & JavaScript Course · 2025</figcaption>
+            </figure>
+
+            <figure class="cert-card">
+                <img src="images/cert2.jpg" alt="Certificate 2">
+                <figcaption>Astrophysics Summer School · 2024</figcaption>
+            </figure>
+
+            <figure class="cert-card">
+                <img src="images/cert3.jpg" alt="Certificate 3">
+                <figcaption>AI in Education Workshop · 2025</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-alt" id="contact">
+        <div class="section-header">
+            <h2>Contact</h2>
+            <p>Get in touch with me</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>My contacts</h3>
+                <ul>
+                    <li><span>Phone:</span> +37120242322</li>
+                    <li><span>Email:</span> <a href="mailto:azmyba03@gmail.com">azmyba03@gmail.com</a></li>
+                    <li><span>Telegram:</span> <a href="https://t.me/yourusername" target="_blank">@yourusername</a></li>
+                    <li><span>Instagram:</span> <a href="https://instagram.com/yourinsta" target="_blank">@yourinsta</a></li>
+                    <li><span>Address:</span> City / Street</li>
+                </ul>
+            </div>
+
+            <form class="contact-form" onsubmit="handleForm(event)">
+                <h3>Send me a message</h3>
+                <label>
+                    Name
+                    <input type="text" id="name" required>
+                </label>
+                <label>
+                    Email
+                    <input type="email" id="email" required>
+                </label>
+                <label>
+                    Message
+                    <textarea id="message" rows="4" required></textarea>
+                </label>
+                <button type="submit" class="btn primary full">Send</button>
+                <p class="form-status" id="form-status"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© <span id="year"></span> Aikoz Bazarbayeva. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
